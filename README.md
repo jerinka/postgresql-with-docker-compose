@@ -13,6 +13,9 @@ Getting Started
 1. start service: `docker-compose up`
 
 ## Connect to the Database
+
+There are multiple ways of connecting to the database container. In this example, we will drop into the database container and use the psql client software that is already installed in the database container.
+
 ```
 docker-compose run database bash # drop into the container shell
 database# psql --host=database --username=unicorn_user --dbname=rainbow_database
